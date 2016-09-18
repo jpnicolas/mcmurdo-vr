@@ -1,0 +1,92 @@
+[
+    {
+        "name": "mountErebus",
+        "id": "mount_erebus",
+        "text": ["Mount Erebus", "12,450 feet"],
+        "point": {
+            "x": 20,
+            "y": 145,
+            "z": 87
+        }
+    },
+    {
+        "name": "mountTerror",
+        "id": "mount_terror",
+        "text": ["Mount Terror", "10,700 feet"],
+        "point": {
+            "x": -200,
+            "y": 110,
+            "z": 70
+        }
+    },
+    {
+        "name": "mountBird",
+        "id": "mount_bird",
+        "text": ["Mount Bird", "5,790 ft"],
+        "point": {
+            "x": 120,
+            "y": -19,
+            "z": 42
+        }
+    },
+    {
+        "name": "iceTongue",
+        "id": "ice_tongue",
+        "text": ["Erebus Ice Tongue"],
+        "point": {
+            "x": 58,
+            "y": 300,
+            "z": 3
+        }
+    },
+    {
+        "name": "iceberg",
+        "id": "iceberg",
+        "text": ["Iceberg"],
+        "point": {
+            "x": 25,
+            "y": -15,
+            "z": 3
+        }
+    },
+    {
+        "name": "mcmurdoStation",
+        "id": "mcmurdo_station",
+        "text": ["McMurdo Station"],
+        "point": {
+            "x": 36,
+            "y": 405,
+            "z": 3
+        }
+    },
+    {
+        "name": "scottBase",
+        "id": "scott_base",
+        "text": ["Scott Base"],
+        "point": {
+            "x": 23,
+            "y": 401,
+            "z": 3
+        }
+    },
+    {
+        "name": "ferrarGlacier",
+        "id": "ferrar_glacier",
+        "text": ["Ferrar Glacier"],
+        "point": {
+            "x": 550,
+            "y": 430,
+            "z": 10
+        }
+    },
+    {
+        "name": "taylorValley",
+        "id": "taylor_valley",
+        "text": ["Taylor Valley"],
+        "point": {
+            "x": 660,
+            "y": 428,
+            "z": 5
+        }
+    }
+]
