@@ -10,7 +10,7 @@ body {
     width: 100%;
     height: 100%;
     position: fixed;
-    background-color: #999;
+    background-color: #000;
     // color: #fff;
     margin: 0;
     padding: 0;
@@ -88,10 +88,6 @@ strong {
     font-weight: 700;
 }
 
-#tophat-container {
-    display: none;
-}
-
 .byline a {
     color: #fff;
 }
@@ -111,35 +107,38 @@ strong {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    color: #fff;
+    color: #fe5a1d;
 }
 
 .info-box h3 {
-    font: 14px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 14px "proximanova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 200;
     margin: 0;
     color: #fff;
 }
 
 .info-box span {
-    font: 14px/17px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 14px/17px "proximanova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 200;
     display: block;
 }
 
 .btn {
+    background: unset;
+    text-shadow: unset;
     // color: #ccc;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 200;
-    // background-color: transparent;
-    border: 1px solid #fff;
-    // transition: all 0.2s;
+    font-family: "proximanova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    // font-weight: 200;
+    background-color: transparent;
+    border: 1px solid #000;
+    transition: all 0.2s;
 }
 
-// .btn:hover {
-//     background-color: rgba(33, 33, 33, 0.6);
-//     border-color: #fff;
-// }
+.btn:hover {
+    // background: unset;
+    background-color: rgba(33, 33, 33, 0.1);
+    // border-color: #fff;
+}
 
 .error-box {
     position: absolute;
@@ -154,7 +153,7 @@ strong {
 }
 
 .error-box p {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "proximanova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 200;
     color: #fff;
     margin: 0;
@@ -164,24 +163,38 @@ strong {
     position: relative;
     height: 100%;
     width: 100%;
-    background: url('../img/antarctica_preload.svg') repeat center center;
+    background-color: #000;
+    background: url('../img/map_antarctica.png') no-repeat center center;
     background-size: contain;
-    // transition: opacity 1.0s ease-out;
+    transition: opacity 2.0s ease-out;
+}
+
+#spinner {
+    color: #999;
+    position: absolute;
+    padding: 20px 20px;
+    top: calc(45% - 25px);
+    width: 400px;
+    left: calc(53% - 200px);
+    text-align: center;
+    border-radius: 5px;
+    display: block;
 }
 
 .loading-box p {
     font-size: 24px;
-    color: #fff;
+    color: #999;
     position: absolute;
-    padding: 20px 30px;
-    top: calc(65% - 25px);
+    padding: 20px 20px;
+    top: calc(55% - 25px);
     width: 400px;
-    left: calc(50% - 200px);
+    left: calc(53% - 200px);
     text-align: center;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 200;
+    font-family: "proximanova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
     border-radius: 5px;
     display: block;
+    line-height: 120%;
 }
 
 .loading-box .wifi-warning {
@@ -205,7 +218,7 @@ strong {
     width: 45%;
     position: absolute;
     top: calc(50% - 100px);
-    left: 25%;
+    left: 15%;
     z-index: 100;
 }
 
@@ -231,7 +244,7 @@ strong {
 .intro-box p {
     margin: 15px 0;
     font-size: 18px;
-    // font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "proximanova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     // font-weight: 200;
     // color: #fff;
 }
@@ -249,7 +262,7 @@ strong {
 
 .intro-box .icon {
     margin-right: 5px;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "proximanova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 200;
     position: relative;
     top: 2px;
@@ -265,6 +278,7 @@ strong {
     left: 10px;
     bottom: 10px;
     width: 25%;
+    max-width: 300px;
     padding: 20px;
     background: rgba(33, 33, 33, 0.7);
     border: 1px solid #fff;
@@ -274,17 +288,18 @@ strong {
 
 .instructions {
     color: #fff;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 200;
+    font-family: "proximanova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
     margin: 0 auto;
 }
 
 .instructions h3,
 .end-tour h3 {
     color: #fff;
-    font: 18px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 18px "proximanova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
     margin-bottom: 15px;
+    margin-top: 0px;
 }
 
 .instructions ul {
@@ -308,6 +323,11 @@ strong {
 
 .instructions .btn {
     margin-top: 15px;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.instructions .btn:hover {
+    background-color: rgba(255,255,255,0.5);
 }
 
 .instructions img {
@@ -324,12 +344,11 @@ strong {
 .end-tour {
     position: absolute;
     bottom: 20px;
-    width: 430px;
-    left: calc(50% - 215px);
+    width: 33%;
+    left: 33%;
     text-align: center;
     padding: 20px;
-    background: rgba(33, 33, 33, 0.7);
-    border: 2px solid #fff;
+    background: transparent;
     border-radius: 5px;
     z-index: 100;
 }
@@ -351,10 +370,10 @@ strong {
     background: rgba(33, 33, 33, 0.7);
     border: 1px solid #fff;
     border-radius: 5px;
-    font: 14px/17px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 14px/17px "proximanova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 200;
     color: #fff;
-    // transition: opacity .15s ease-out;
+    transition: opacity .15s ease-out;
 }
 
 .poi-counter:hover {
@@ -365,18 +384,65 @@ strong {
     opacity: 0;
 }
 
-.tour-btn {
-    position: absolute;
-    bottom: 30px;
-    right: 10px;
+.next-point-box .btn {
     z-index: 100;
-    // transition: opacity .15s ease-out;
+    transition: opacity .15s ease-out;
+    background-image: unset;
+    text-shadow: unset;
+    background-color: rgba(255,255,255,0.6);
+    font-weight: 400px;
+    color: #fe5a1d;
+    border-color: #fe5a1d;
 }
 
-.credits,
-.home {
+.next-point-box .btn:hover {
+    background-color: rgba(33,33,33,0.3);
+    color: #fe5a1d;
+    text-decoration: none;
+}
+
+.tour-btn, .home-btn {
     position: absolute;
-    font: 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    bottom: 10px;
+    right: 160px;
+    z-index: 100;
+    transition: opacity .15s ease-out;
+    background-image: unset;
+    text-shadow: unset;
+    background-color: rgba(255,255,255,0.6);
+    font-weight: 400px;
+    color: #fe5a1d;
+    border-color: #fe5a1d;
+}
+
+#keep-exploring {
+    z-index: 100;
+    transition: opacity .15s ease-out;
+    background-image: unset;
+    text-shadow: unset;
+    background-color: rgba(255,255,255,0.6);
+    font-weight: 400px;
+    color: #fe5a1d;
+    border-color: #fe5a1d;
+}
+
+.tour-btn:hover, .home-btn:hover {
+    background-color: rgba(33,33,33,0.3);
+    color: #fe5a1d;
+    text-decoration: none;
+}
+
+.tour-btn {
+    right: 160px;
+}
+
+.home-btn {
+    right: 10px;
+}
+
+.credits {
+    position: absolute;
+    font: 12px "proximanova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 200;
     bottom: 0;
     right: 0;
@@ -384,15 +450,10 @@ strong {
     color: #fff;
 }
 
-.credits:hover,
-.home:hover {
+.credits:hover {
     color: #fff;
     text-decoration: underline;
     cursor: pointer;
-}
-
-.home {
-    right: 60px;
 }
 
 .credits-box {
@@ -410,7 +471,7 @@ strong {
 .credits-box h3,
 .credits-box p {
     color: #fff;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "proximanova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 200;
 }
 
@@ -428,9 +489,9 @@ strong {
     text-align: left;
     width: 10px;
     height: 10px;
-    background-color: #fff;
+    background-color: #ff0000;
     position: absolute;
-    // transition: width 0.2s;
+    transition: width 0.2s;
 }
 
 @media(max-width:1024px) {

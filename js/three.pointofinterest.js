@@ -15,7 +15,7 @@ THREE.PointOfInterest.prototype = {
     constructor: THREE.PointOfInterest,
 
     addLine: function(){
-        var lineMaterial = new THREE.LineBasicMaterial({color: 0xffffff});
+        var lineMaterial = new THREE.LineBasicMaterial({color: 0xfe5a1d});
         var lineGeometry = new THREE.Geometry();
         var p1 = new THREE.Vector3(this.point.x, this.point.y, this.point.z);
         var p2 = this.lineEndpoint;
@@ -31,7 +31,7 @@ THREE.PointOfInterest.prototype = {
         var textCoords = this.lineEndpoint;
         var textLabelGeometry = new THREE.Geometry();
         var textLabel = new THREE.Mesh();
-        var textMaterial = new THREE.MeshBasicMaterial({color: 0xffffff});
+        var textMaterial = new THREE.MeshBasicMaterial({color: 0xfe5a1d});
 
         for (var i = 0; i < this.text.length; i += 1) {
             var textGeom = new THREE.TextGeometry(this.text[i], {

@@ -1,0 +1,117 @@
+<body>
+<div id="container" class="three-container">
+    <div id="loading-box" class="loading-box">
+        <p>
+            <span id="progressbar"><span id="bar"></span></span>
+            <span class="wifi-warning">Best experienced over a wifi connection</span>
+            <br>
+            <span id="loading-box-text">Loading initial data</span>
+            <br>
+        </p>
+    </div>
+    <div id="desktop-sharebuttons-box" class="desktop-sharebuttons-box visible-desktop hidden">
+        <div class="sharebuttons clearfix">
+            <i class="LATFacebook" data-socialshare-type="facebook"></i>
+            <i class="LATTwitter" data-socialshare-type="twitter"></i>
+            <i class="LATEmail" data-socialshare-type="email"></i>
+        </div>
+    </div>
+    <div id="info-box" class="info-box hidden">
+        <h3>Controls:</h3>
+        <span><strong>W / S:</strong> Forwards / Backwards</span>
+        <span><strong>A / D:</strong> Left / Right</span>
+        <span><strong>R / F:</strong> Up / Down</span>
+        <span><strong>Q / E:</strong> Roll left / right</span>
+        <span><strong>Up / Down:</strong> Pitch up / down</span>
+        <span><strong>Left / Right:</strong> Yaw left / right</span>
+        <span><strong>Shift:</strong> Speed up</span>
+    </div>
+    <div id="intro-box" class="intro-box hidden">
+        <div class="sharebuttons clearfix">
+            <i class="LATFacebook" data-socialshare-type="facebook"></i>
+            <i class="LATTwitter" data-socialshare-type="twitter"></i>
+            <i class="LATEmail" data-socialshare-type="email"></i>
+        </div>
+        <div class="logo"></div>
+        <h1>Discovering Gale Crater</h1>
+        <p class="byline">By <span class="author"><a href="http://www.latimes.com/la-bio-armand-emamdjomeh-staff.html">Armand Emamdjomeh</a></span></p>
+        <p class="dateline">
+            <time datetime="2015-10-26" pubdate>Oct. 26, 2015</time>
+        </p>
+        <div class="description">
+            <p>Take a <strong>virtual reality audio tour</strong> of the Gale Crater, including geological features and areas that appear to have been carved by flowing water. <strong>Narrated by Fred J. Calef III,</strong> a geoscientist for NASA's Mars Science Laboratory.</p>
+            <p><span class='icon-headphones icon-white icon'></span>Headphones recommended:</p>
+        </div>
+        <div class="description-mobile-landscape">
+            <p>Take a <strong>virtual reality audio tour</strong> of the Gale Crater. <strong>Narrated by Fred J. Calef III</strong>, NASA's Mars Science Laboratory.</p>
+            <p><span class='icon-headphones icon-white icon'></span>Headphones recommended:</p>
+        </div>
+        <div class="selection-box visible-desktop">
+            <button class="btn btn-large" id="tour">Tour</button>
+            <button class="btn btn-large hidden" id="vr-desktop">VR Tour</button>
+            <button class="btn btn-large" id="explore">Explore</button>
+        </div>
+        <div class="selection-box-mobile hidden-desktop">
+            <button class="btn" id="vr">Take VR Tour</button>
+            <button class="btn" id="standard">Explore</button>
+        </div>
+    </div>
+    <div id="end-tour" class="end-tour hidden">
+        <h3>Now it's your turn to explore</h3>
+        <button class="btn" id="keep-exploring">Keep exploring</button>
+    </div>
+    <div id="instructions-box" class="instructions-box hidden">
+        <div id="instructions-mobile" class="instructions mobile hidden">
+            <h3>Instructions</h3>
+            <ul>
+                <li class="clearfix"><img src="/static/svg/mars-gale-crater-vr/use-mobile-icon.svg">Hold the phone horizontally, tilt and rotate to navigate. You may want to stand up!</li>
+                <li class="clearfix"><img src="/static/svg/mars-gale-crater-vr/start-stop-mobile-icon.svg">Tap to start and stop movement.</li>
+                <li class="clearfix"><img src="/static/svg/mars-gale-crater-vr/audio-mobile.svg">Focus target on a feature label to hear audio.</li>
+            </ul>
+            <button class="btn" id="begin-mobile">Go!</button>
+        </div>
+        <div id="instructions-vr" class="instructions vr hidden">
+            <h3>Instructions</h3>
+            <ul>
+                <li class="clearfix"><img src="/static/svg/mars-gale-crater-vr/start-stop-cardboard-icon.svg">Use button to start and stop tour</li>
+                <li class="clearfix"><img src="/static/svg/mars-gale-crater-vr/use-cardboard-icon.svg">Press Go and place phone in virtual reality device once split screen is displayed.</li>
+            </ul>
+            <button class="btn" id="begin-vr">Go!</button>
+            <button class="btn" id="no-vr">I don't have a VR device</button>
+        </div>
+        <div id="instructions-desktop" class="instructions hidden">
+            <h3>Instructions</h3>
+            <ul>
+                <li class="clearfix"><img src="/static/svg/mars-gale-crater-vr/keys-icon.svg">W, A, S, D move forward, backwards, left and right.</li>
+                <li class="clearfix"><img src="/static/svg/mars-gale-crater-vr/qe-keys-set.svg">Q, E keys roll left and right.</li>
+                <li class="clearfix"><img src="/static/svg/mars-gale-crater-vr/rf-keys-set.svg">R, F keys move up and down.</li>
+                <li class="clearfix"><img src="/static/svg/mars-gale-crater-vr/shift-keys-set.svg">Hold shift to speed up.</li>
+                <li class="clearfix"><img src="/static/svg/mars-gale-crater-vr/use-computer-icon.svg">Click feature labels to hear audio.</li>
+            </ul>
+            <button class="btn" id="begin-desktop">Hide instructions</button>
+        </div>
+    </div>
+    <div id="credits-box" class="credits-box hidden">
+        <h3>About this project</h3>
+        <p>Data was provided by the Mars Science Laboratory at NASA's Jet Propulsion Laboratory. Height information is exaggerated from the actual scale of the crater.</p>
+        <p><a href="/mars-gale-crater-how-we-did-it/">Read about how we created the experience.</a></p>
+        <p>Audio Narration by Dr. Fred J. Calef III, Geospatial Information Scientist for NASA's Mars Science Laboratory</p>
+        <p>Source: NASA Mars Science Laboratory</p>
+        <p>Contributors: Eben McCue, Lorena I&ntilde;iguez and Raoul Ra&ntilde;oa</p>
+        <button class="btn" id="close-credits-button">Close</button>
+    </div>
+    <div id="next-point-box" class="next-point-box hidden">
+        <button class="btn btn-large" id="next">Continue</button>
+        <button class="btn btn-large" id="cancel">Exit tour</button>
+    </div>
+    <button id="tour-btn" class="btn btn-large tour-btn hidden">Guided Tour</button>
+    <a id="home" class="home hidden">Intro</a>
+    <a id="credits" class="credits hidden">Credits</a>
+    <div id="poi-counter" class="poi-counter fadeout"></div>
+    <div id="worlds-end-box" class="worlds-end-box fadeout">You've reached the edge of the crater. Turn around!</div>
+    <div id="webgl"></div>
+</div>
+<script src="/static/js/three/marsvr.scripts.js"></script>
+<script src="/static/js/three/three.terrainloader.js"></script>
+<script src="/static/js/three/three.pointofinterest.js"></script>
+</body>

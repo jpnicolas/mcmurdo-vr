@@ -5,7 +5,6 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 body {
     width: 100%;
     height: 100%;
@@ -16,7 +15,6 @@ body {
     padding: 0;
     overflow: hidden;
 }
-
 body,
 h1,
 h2,
@@ -28,7 +26,6 @@ td,
 .button {
     font-family: 'proximanova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
 h1,
 h2,
 h3,
@@ -39,108 +36,88 @@ strong,
 .button {
     font-weight: 600;
 }
-
 h4,
 h5,
 h6 {
     clear: both;
 }
-
 h2 {
     font-weight: 400;
     text-transform: uppercase;
 }
-
 h3 {
     font-family: 'capita', serif;
     font-weight: 300;
 }
-
 h4 {
     font-weight: 400;
 }
-
 h5 {
     font-weight: 600;
 }
-
 a {
     color: #007FFF;
     text-decoration: none;
 }
-
 a:hover {
     color: #222;
     text-decoration: underline;
 }
-
 footer {
     display: none;
 }
-
 canvas {
     display: block;
     margin: 0;
     padding: 0;
 }
-
 strong {
     font-weight: 700;
 }
-
 #tophat-container {
     display: none;
 }
-
 .byline a {
     color: #fff;
 }
-
 .byline a:hover {
     color: #aaa;
 }
-
 .three-container {
     position: relative;
     margin: 0;
     padding: 0;
     height: 100%;
 }
-
 .info-box {
     position: absolute;
     bottom: 10px;
     left: 10px;
     color: #fff;
 }
-
 .info-box h3 {
     font: 14px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 200;
     margin: 0;
     color: #fff;
 }
-
 .info-box span {
     font: 14px/17px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 200;
     display: block;
 }
-
 .btn {
     // color: #ccc;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 200;
     // background-color: transparent;
     border: 1px solid #fff;
-    // transition: all 0.2s;
+    transition: all 0.2s;
 }
-
 // .btn:hover {
 //     background-color: rgba(33, 33, 33, 0.6);
 //     border-color: #fff;
 // }
-
 .error-box {
     position: absolute;
     width: 60%;
@@ -152,23 +129,20 @@ strong {
     z-index: 100;
     padding: 20px;
 }
-
 .error-box p {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 200;
     color: #fff;
     margin: 0;
 }
-
 .loading-box {
     position: relative;
     height: 100%;
     width: 100%;
     background: url('../img/antarctica_preload.svg') repeat center center;
     background-size: contain;
-    // transition: opacity 1.0s ease-out;
+    transition: opacity 1.0s ease-out;
 }
-
 .loading-box p {
     font-size: 24px;
     color: #fff;
@@ -183,11 +157,9 @@ strong {
     border-radius: 5px;
     display: block;
 }
-
 .loading-box .wifi-warning {
     font-size: 18px;
 }
-
 .sharebuttons {
     color: #fff;
     margin: 0;
@@ -199,7 +171,6 @@ strong {
     position: relative;
     margin-top: 10px
 }
-
 .intro-box {
     text-align: left;
     width: 45%;
@@ -208,26 +179,22 @@ strong {
     left: 25%;
     z-index: 100;
 }
-
 .intro-box h1 {
     color: #000;
     font-size: 45px;
     // font-family: "Belizio Narrow SemiBold", Georgia, serif;
     // letter-spacing: 0.01em;
 }
-
 .intro-box h3 {
     color: #bb0000;
     // font-family: "Belizio Narrow SemiBold", Georgia, serif;
     // letter-spacing: 0.01em;
 }
-
 .intro-box a {
     color: #bb0000;
     // font-family: "Belizio Narrow SemiBold", Georgia, serif;
     // letter-spacing: 0.01em;
 }
-
 .intro-box p {
     margin: 15px 0;
     font-size: 18px;
@@ -235,18 +202,15 @@ strong {
     // font-weight: 200;
     // color: #fff;
 }
-
 .intro-box .byline {
     margin: 7px 0 3px 3px;
     color: #444;
 }
-
 .intro-box .dateline {
     margin: 3px 0 20px 3px;
     font-size: 16px;
     color: #444;
 }
-
 .intro-box .icon {
     margin-right: 5px;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -254,12 +218,10 @@ strong {
     position: relative;
     top: 2px;
 }
-
 .description,
 .selection-box {
     margin-left: 3px;
 }
-
 .instructions-box {
     position: absolute;
     left: 10px;
@@ -271,14 +233,12 @@ strong {
     border-radius: 5px;
     z-index: 100;
 }
-
 .instructions {
     color: #fff;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 200;
     margin: 0 auto;
 }
-
 .instructions h3,
 .end-tour h3 {
     color: #fff;
@@ -286,40 +246,32 @@ strong {
     font-weight: 700;
     margin-bottom: 15px;
 }
-
 .instructions ul {
     margin: 0;
     list-style-type: none;
 }
-
 .instructions li {
     font-size: 14px;
     padding: 15px 5px;
     border-bottom: 1px solid #fff;
 }
-
 .instructions li:first-child {
     border-top: 1px solid #fff;
 }
-
 .instructions li i {
     margin-right: 3px;
 }
-
 .instructions .btn {
     margin-top: 15px;
 }
-
 .instructions img {
     float: left;
     width: 75px;
     margin-right: 7px;
 }
-
 .description-mobile-landscape {
     display: none;
 }
-
 .next-point-box,
 .end-tour {
     position: absolute;
@@ -333,13 +285,11 @@ strong {
     border-radius: 5px;
     z-index: 100;
 }
-
 .desktop-sharebuttons-box {
     position: absolute;
     top: 5px;
     right: 10px;
 }
-
 .poi-counter,
 .worlds-end-box {
     position: absolute;
@@ -354,25 +304,21 @@ strong {
     font: 14px/17px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 200;
     color: #fff;
-    // transition: opacity .15s ease-out;
+    transition: opacity .15s ease-out;
 }
-
 .poi-counter:hover {
     cursor: default;
 }
-
 .fadeout {
     opacity: 0;
 }
-
 .tour-btn {
     position: absolute;
     bottom: 30px;
     right: 10px;
     z-index: 100;
-    // transition: opacity .15s ease-out;
+    transition: opacity .15s ease-out;
 }
-
 .credits,
 .home {
     position: absolute;
@@ -383,18 +329,15 @@ strong {
     padding: 10px;
     color: #fff;
 }
-
 .credits:hover,
 .home:hover {
     color: #fff;
     text-decoration: underline;
     cursor: pointer;
 }
-
 .home {
     right: 60px;
 }
-
 .credits-box {
     position: absolute;
     width: 40%;
@@ -406,14 +349,12 @@ strong {
     z-index: 500;
     border-radius: 5px;
 }
-
 .credits-box h3,
 .credits-box p {
     color: #fff;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 200;
 }
-
 #progressbar {
     display: inline-block;
     text-align: left;
@@ -422,7 +363,6 @@ strong {
     margin-top: 5px;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
 #bar {
     display: inline-block;
     text-align: left;
@@ -430,9 +370,8 @@ strong {
     height: 10px;
     background-color: #fff;
     position: absolute;
-    // transition: width 0.2s;
+    transition: width 0.2s;
 }
-
 @media(max-width:1024px) {
     .intro-box {
         width: 80%;
@@ -443,7 +382,6 @@ strong {
         width: 50%;
     }
 }
-
 @media(max-width:767px) and (max-height: 767px) {
     .logo {
         height: 20px;
@@ -509,7 +447,6 @@ strong {
         top: 5%;
     }
 }
-
 @media(max-width:479px) and (orientation: portrait) {
     .intro-box {
         top: calc(50% - 215px);
@@ -527,14 +464,12 @@ strong {
         display: block;
     }
 }
-
 @media(max-height: 375px) and (orientation: landscape) {
     .byline,
     .dateline {
         display: none;
     }
 }
-
 @media(min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
     .sharebuttons,
     .byline,
